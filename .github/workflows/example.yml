@@ -22,3 +22,5 @@ jobs:
 
       - name: Build project
         run: npm run build
+        env: 
+          ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
